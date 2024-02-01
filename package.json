@@ -1,0 +1,28 @@
+{
+    "name": "ts-project-template",
+    "version": "1.0.0",
+    "description": "TS Project Template",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build": "rimraf ./build && npx tsc",
+        "dev": "npx nodemon",
+        "format": "npx eslint ./src --fix",
+        "lint": "npx eslint ./src",
+        "start": "npm run build && node build/index"
+    },
+    "keywords": [],
+    "author": "kaktuz",
+    "license": "Unlicense",
+    "devDependencies": {
+        "@types/node": "^18.19.11",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "@typescript-eslint/parser": "^5.62.0",
+        "eslint": "^8.56.0",
+        "nodemon": "^2.0.22",
+        "prettier": "^2.8.8",
+        "rimraf": "^3.0.2",
+        "tsx": "^4.7.0",
+        "typescript": "^4.9.5"
+    }
+}
